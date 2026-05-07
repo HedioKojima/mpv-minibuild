@@ -26,7 +26,7 @@ ExternalProject_Add(ffmpeg
         --enable-libjxl
         --enable-schannel
         --enable-d3d11va
-        --enable=d3d12va
+        --enable-d3d12va
         --enable-dxva2
         --disable-doc
         --disable-programs
