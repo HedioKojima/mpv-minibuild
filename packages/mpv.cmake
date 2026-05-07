@@ -25,6 +25,9 @@ ExternalProject_Add(mpv
         -Dpdf-build=enabled
         -Dlua=luajit
         -Dgl=disabled
+        -Djavascript=disabled
+        -Dcplugins=disabled
+        -Dd3d9-hwaccel=disabled
         -Ddirect3d=disabled
     BUILD_COMMAND ${EXEC} LTO_JOB=1 ninja
     INSTALL_COMMAND ""
