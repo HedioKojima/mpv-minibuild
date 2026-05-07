@@ -26,6 +26,7 @@ ExternalProject_Add(ffmpeg
         --enable-libjxl
         --enable-schannel
         --enable-d3d11va
+        --enable=d3d12va
         --enable-dxva2
         --disable-doc
         --disable-programs
@@ -36,7 +37,7 @@ ExternalProject_Add(ffmpeg
         --disable-devices
         --disable-bsfs
         --disable-filters
-        --enable-filter=bwdif,dynaudnorm,loudnorm,rotate,vflip
+        --enable-filter=bwdif,rotate,vflip
         --disable-encoders
         --disable-decoder=aac_fixed,ac3_fixed,mp1,mp2,mp3,mp3adu,mp3on4
     BUILD_COMMAND ${MAKE}
