@@ -34,14 +34,14 @@ ExternalProject_Add(ffmpeg
         --disable-muxers
         --disable-demuxer=matroska
         --enable-muxer=image2
+        --enable-muxer=gif
         --disable-devices
         --disable-bsfs
-        --disable-filters
-        --enable-filter=bwdif,rotate,vflip
         --disable-encoders
         --enable-encoder=libjxl
         --enable-encoder=png
         --enable-encoder=mjpeg
+        --enable-encoder=gif
         --disable-decoder=aac_fixed,ac3_fixed,mp1,mp2,mp3,mp3adu,mp3on4,libaom_av1
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
