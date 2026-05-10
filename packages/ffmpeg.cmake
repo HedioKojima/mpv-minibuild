@@ -27,19 +27,22 @@ ExternalProject_Add(ffmpeg
         --enable-schannel
         --enable-d3d11va
         --enable-d3d12va
-        --enable-dxva2
         --disable-doc
         --disable-programs
         --disable-debug
         --disable-avdevice
         --disable-muxers
         --disable-demuxer=matroska
+        --enable-muxer=image2
         --disable-devices
         --disable-bsfs
         --disable-filters
         --enable-filter=bwdif,rotate,vflip
         --disable-encoders
-        --disable-decoder=aac_fixed,ac3_fixed,mp1,mp2,mp3,mp3adu,mp3on4
+        --enable-encoder=libjxl
+        --enable-encoder=png
+        --enable-encoder=mjpeg
+        --disable-decoder=aac_fixed,ac3_fixed,mp1,mp2,mp3,mp3adu,mp3on4,libaom_av1
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
     LOG_DOWNLOAD 1 LOG_UPDATE 1 LOG_CONFIGURE 1 LOG_BUILD 1 LOG_INSTALL 1
