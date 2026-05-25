@@ -70,7 +70,7 @@ jobs:
       - name: Checkout toolchain
         uses: actions/checkout@v6
         with:
-          repository: Kosm8/mpv-winbuild-cmake
+          repository: HedioKojima/mpv-winbuild-cmake
           path: mpv-winbuild-cmake
           fetch-depth: 0
 
